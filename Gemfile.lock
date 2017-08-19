@@ -46,7 +46,7 @@ GEM
       temple (>= 0.8.0)
       tilt
     hike (1.2.3)
-    hyalite (0.2.1)
+    hyalite (0.1.0)
       opal
     multi_json (1.12.1)
     opal (0.10.5)
@@ -107,7 +107,7 @@ PLATFORMS
 
 DEPENDENCIES
   gibier
-  hyalite
+  hyalite (= 0.1.0)
   opal-browser
   opal-haml!
   opal-router!

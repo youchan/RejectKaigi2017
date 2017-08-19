@@ -1,5 +1,7 @@
+require 'opal'
 require 'hyalite'
 require 'opal-router'
+require 'browser'
 require 'browser/interval'
 require 'browser/location'
 require 'track_field'
@@ -34,6 +36,10 @@ module Gibier
 
   def self.gh_pages
     `window.ghPages`
+  end
+
+  def self.gh_pages=(page)
+    `window.ghPages=page`
   end
 
   def self.assets_path
