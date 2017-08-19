@@ -37172,11 +37172,11 @@ if (params == null) params = nil;
         var $a, self = this, keycode = nil, $case = nil;
 
         keycode = event.$code();
-        return (function() {$case = keycode;if ((39)['$===']($case) || (34)['$===']($case)) {if ((($a = $rb_lt(self.state['$[]']("page_number"), $scope.get('Gibier').$page_count())) !== nil && $a != null && (!$a.$$is_boolean || $a == true))) {
+        return (function() {$case = keycode;if ((39)['$===']($case) || (34)['$===']($case) || (32)['$===']($case)) {if ((($a = $rb_lt(self.state['$[]']("page_number"), $scope.get('Gibier').$page_count())) !== nil && $a != null && (!$a.$$is_boolean || $a == true))) {
           return self.$page_to($rb_plus(self.state['$[]']("page_number"), 1))
           } else {
           return nil
-        }}else if ((37)['$===']($case) || (33)['$===']($case)) {if ((($a = $rb_gt(self.state['$[]']("page_number"), 0)) !== nil && $a != null && (!$a.$$is_boolean || $a == true))) {
+        }}else if ((37)['$===']($case) || (33)['$===']($case) || (8)['$===']($case)) {if ((($a = $rb_gt(self.state['$[]']("page_number"), 0)) !== nil && $a != null && (!$a.$$is_boolean || $a == true))) {
           return self.$page_to($rb_minus(self.state['$[]']("page_number"), 1))
           } else {
           return nil

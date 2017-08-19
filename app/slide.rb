@@ -109,9 +109,9 @@ module Gibier
     def handle_key_down(event)
       keycode = event.code
       case keycode
-      when 39,34
+      when 39,34,32
         page_to(@state[:page_number] + 1) if @state[:page_number] < Gibier.page_count
-      when 37,33
+      when 37,33,8
         page_to(@state[:page_number] - 1) if @state[:page_number] > 0
       when 83,66
         unless @state[:start]
